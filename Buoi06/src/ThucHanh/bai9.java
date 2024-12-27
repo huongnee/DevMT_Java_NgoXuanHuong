@@ -8,7 +8,7 @@ public class bai9 {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
+                if (arr[j] > arr[j + 1]) { // Hoán đổi nếu phần tử trước lớn hơn phần tử sau
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
@@ -28,7 +28,7 @@ public class bai9 {
             arr[i] = scanner.nextInt();
         }
 
-        bubbleSort(arr);
+        bubbleSort(arr); // Gọi hàm sắp xếp
 
         System.out.println("Mảng sau khi sắp xếp tăng dần: ");
         for (int i : arr) {

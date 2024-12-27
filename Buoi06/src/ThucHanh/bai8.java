@@ -7,12 +7,13 @@ public class bai8 {
     public static void selectionSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
-            int minIndex = i;
+            int minIndex = i; // Giả sử phần tử đầu tiên là nhỏ nhất
             for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[minIndex]) {
+                if (arr[j] < arr[minIndex]) { // Tìm phần tử nhỏ nhất còn lại
                     minIndex = j;
                 }
             }
+            // Hoán đổi phần tử nhỏ nhất với phần tử đầu tiên của dãy chưa sắp xếp
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;
@@ -30,11 +31,11 @@ public class bai8 {
             arr[i] = scanner.nextInt();
         }
 
-        selectionSort(arr);
+        selectionSort(arr); // Gọi hàm sắp xếp
 
         System.out.println("Mảng sau khi sắp xếp tăng dần: ");
         for (int i : arr) {
-            System.out.print(i + " ");
+            System.out.print(i + " "); // In mảng đã sắp xếp
         }
         scanner.close();
     }
