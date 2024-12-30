@@ -8,5 +8,6 @@ public class Calculator {
         Rectangle r = new Rectangle();
         r.cr = 2;
         r.calculate(15);
+
     }
 }

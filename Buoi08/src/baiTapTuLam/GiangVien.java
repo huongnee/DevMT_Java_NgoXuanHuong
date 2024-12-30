@@ -69,7 +69,7 @@ public class GiangVien {
         diaChi = scanner.nextLine();
         System.out.println("Nhap dien thoai : ");
         dienThoai = scanner.nextLine();
-        System.out.println("Nhap so gio giang : ");
+        System.out.println("So gio giang : ");
         soGioGiang = scanner.nextInt();
     }
     public void showInformation(){

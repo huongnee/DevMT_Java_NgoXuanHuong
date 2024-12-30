@@ -1,5 +1,7 @@
 package demoExample;
 
+import java.util.Scanner;
+
 public class FourWheeler extends Vehicle{
     private boolean powerSteer;
 
@@ -24,6 +26,9 @@ public class FourWheeler extends Vehicle{
     }
 
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Nhập số ");
+        int a = s.nextInt();
         FourWheeler f = new FourWheeler("BMW", "123456", 4, true);
         f.showDetails();
         f.accelerate(100);
