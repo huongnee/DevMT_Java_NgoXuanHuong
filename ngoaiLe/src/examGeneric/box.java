@@ -4,6 +4,7 @@ public class box {
     private int value;
     public box() {}
     public box(int value) {
+
         this.value = value;
     }
     public int getValue() {

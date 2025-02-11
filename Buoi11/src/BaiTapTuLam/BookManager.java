@@ -15,10 +15,10 @@ class BookManager {
         }
     }
 
-    public void displayBooksSortedByPriceDescending() {
-        Collections.sort(books, Comparator.comparing(Book::getPrice).reversed());
-        displayBooks();
-    }
+//    public void displayBooksSortedByPriceDescending() {
+//        Collections.sort(books, Comparator.comparing(Book::getPrice).reversed());
+//        displayBooks();
+//    }
 
 
     public static void main(String[] args) {
@@ -48,7 +48,7 @@ class BookManager {
         System.out.println("\nDanh sách");
         manager.displayBooks();
 
-        System.out.println("\nBooks Sắp xếp");
-        manager.displayBooksSortedByPriceDescending();
+//        System.out.println("\nBooks Sắp xếp");
+//        manager.displayBooksSortedByPriceDescending();
     }
 }

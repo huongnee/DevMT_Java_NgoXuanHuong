@@ -34,9 +34,9 @@ public class ProductTest {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
 
-        System.out.println("\nProducts Sắp xếp: ");
-        products.entrySet().stream()
-                .sorted((e1, e2) -> Integer.compare(e1.getValue().getYearMaking(), e2.getValue().getYearMaking()))
-                .forEach(entry -> System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue()));
+//        System.out.println("\nProducts Sắp xếp: ");
+//        products.entrySet().stream()
+//                .sorted((e1, e2) -> Integer.compare(e1.getValue().getYearMaking(), e2.getValue().getYearMaking()))
+//                .forEach(entry -> System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue()));
     }
 }
